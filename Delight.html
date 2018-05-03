@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Delight</title>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body onselectstart="return false">
+		<section class="delight">
+			<header class="header">
+				<div class="delight_logo"><img src="images/logo.png"/></div>
+				<ul class="nav">
+					<li class="nav_li">文件</li>
+					<li class="nav_li nav_active">场景</li>
+					<li class="nav_li">动画</li>
+					<li class="nav_li">模板</li>
+					<li class="nav_li">变量</li>
+				</ul>
+				<i class="close_delight"></i>
+			</header>
+			<!--menu-->
+			<div class="menu">
+				<div class="menu_list">
+					<div class="changjing_right">
+						<div class="iconBox"><span class='asd'><img src="images/icon-01.png"/></span><a>填充</a><i></i></div>
+						<div class="iconBox"><span><img src="images/icon-02.png"/></span><a>线条</a><i></i></div>
+						<span class="menu_lineBox"></span>
+						<div class="iconBox"><span><img src="images/icon-3.png"/></span><a>删除</a></div>
+						<div class="iconBox"><span><img src="images/icon-4.png"/></span><a>复制</a></div>
+						<div class="iconBox"><span><img src="images/icon-05.png"/></span><a>粘贴</a></div>
+						<span class="menu_lineBox"></span>
+						<div class="iconBox"><span><img src="images/icon-6.png"/></span><a>动作</a><i></i></div>
+						<div class="iconBox"><span><img src="images/icon-7.png"/></span><a>精灵</a></div>
+						<div class="iconBox"><span><img src="images/icon-8.png"/></span><a>卷轴</a></div>
+						<span class="menu_lineBox"></span>
+						<div class="iconBox"><span><img src="images/icon-9.png"/></span><a>形状</a><i></i></div>
+						<div class="iconBox"><span><img src="images/icon-10.png"/></span><a>控件</a><i></i></div>
+						<div class="iconBox"><span><img src="images/icon-11.png"/></span><a>顶层</a><i></i></div>
+						<div class="iconBox"><span><img src="images/icon-012.png"/></span><a>组合</a><i></i></div>
+					</div>
+				</div>
+				<div class="menu_list menu_active">
+					<div class="changjing_left"><img src="images/changjing_l2.png"/></div>
+					<div class="changjing_right">
+						<div class="iconBox icon_tianchong"><span><img src="images/icon-01.png"/></span><a>填充</a><i></i></div>
+						<div class="iconBox icon_xiantiao"><span><img src="images/icon-02.png"/></span><a>线条</a><i></i></div>
+						<span class="menu_lineBox"></span>
+						<div class="iconBox icon_shanchu"><span><img src="images/icon-03.png"/></span><a>删除</a></div>
+						<div class="iconBox icon_fuzhi"><span><img src="images/icon-04.png"/></span><a>复制</a></div>
+						<div class="iconBox"><span><img src="images/icon-05.png"/></span><a>粘贴</a></div>
+						<span class="menu_lineBox"></span>
+						<div class="iconBox iconBox_dongzuo"><span><img src="images/icon-06.png"/></span><a>动作</a><i></i></div>
+						<div class="iconBox iconBox_jingling"><span><img src="images/icon-7.png"/></span><a>精灵</a></div>
+						<div class="iconBox iconBox_juanzhou"><span><img src="images/icon-8.png"/></span><a>卷轴</a></div>
+						<span class="menu_lineBox"></span>
+						<div class="iconBox"><span><img src="images/icon-9.png"/></span><a>形状</a><i></i></div>
+						<div class="iconBox iconBox_kongjian"><span><img src="images/icon-10.png"/></span><a>控件</a><i></i><ul><li id="kongjian">文本框</li><li>输入框</li><li id="kongjian_btn">按钮</li><li>单选框</li><li>多选框</li><li>组合框</li></ul></div>
+						<div class="iconBox iconBox_dingceng"><span><img src="images/icon-011.png"/></span><a>顶层</a><i></i></div>
+						<div class="iconBox"><span><img src="images/icon-012.png"/></span><a>组合</a><i></i></div>
+						<span class="menu_lineBox"></span>
+						<div class="iconBox" style="width: 60px;"><span><img src="images/icon-13.png"/></span><a>导入组件</a></div>
+						<div class="iconBox letsgo" style="float: right;margin-right: 40px;"><span><img src="images/icon-22.png"/></span><a>运行</a></div>
+						<div class="iconBox" style="float: right;"><span><img src="images/icon-14.png"/></span><a>生成</a><i></i></div>
+					</div>
+				</div>
+				<div class="menu_list">
+					<div class="donghua_menu">
+						<div class="iconBox create_newDonghua"><span><img src="images/icon-17.png"/></span><a>新建</a></div>
+						<div class="iconBox donghua_shanchu"><span><img src="images/icon-03.png"/></span><a>删除</a></div>
+						<div class="iconBox donghua_fuzhi"><span><img src="images/icon-04.png"/></span><a>复制</a></div>
+						<div class="iconBox"><span><img src="images/icon-05.png"/></span><a>粘贴</a></div>
+						<div class="iconBox donghua_yulan"><span><img src="images/icon-31.png"/></span><a>预览</a></div>
+					</div>
+				</div>
+				<div class="menu_list">
+					<div class="moban_menu">
+						<div class="iconBox"><span><img src="images/icon-16.png"/></span><a>导入模板</a><i></i></div>
+						<div class="iconBox"><span><img src="images/icon-17.png"/></span><a>新建模板</a><i></i><ul><li class="create_jl"><b><img src="images/mbxj_03.png"/></b>精灵类</li><li class="create_lc"><b><img src="images/mbxj_04.png"/></b>流程类</li><li class="create_pd"><b><img src="images/mbxj_01.png"/></b>形状类</li></ul></div>
+						<div class="iconBox mbIocn_sc"><span><img src="images/icon-03.png"/></span><a>删除模板</a></div>
+						<div class="iconBox mbIocn_fz"><span><img src="images/icon-04.png"/></span><a>复制模板</a></div>
+						<div class="iconBox mbIocn_zt"><span><img src="images/icon-05.png"/></span><a>粘贴模板</a></div>
+						<div class="iconBox create_ps"><span style="opacity: 0.2;"><img src="images/icon-26.png"/></span><a>派生模板</a></div>
+					</div>
+				</div>
+				<div class="menu_list">
+					<div class="moban_menu">
+						<div class="iconBox"><span><img src="images/icon-17.png"/></span><a>新建变量</a></div>
+						<div class="iconBox"><span><img src="images/icon-3.png"/></span><a>删除变量</a></div>
+						<div class="iconBox"><span><img src="images/icon-4.png"/></span><a>复制变量</a></div>
+						<div class="iconBox"><span><img src="images/icon-5.png"/></span><a>粘贴变量</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="delight_content">
+				<!--tree-->
+				<div class="project_tree">
+					<div class="tree_box">
+						<div class="tree_title"></div>
+						<div class="tree_content">
+							<!--这里放的图片-->
+							<a href="#" class="tree_pic"><img src="images/laji01.png"/></a>
+						</div>
+					</div>
+				</div>
+				<!--content-->
+				<div class="contentBox">
+					<!--文件-->
+					<div class="content_list"></div>
+					<!--场景-->
+					<div class="content_list changjing">
+						<div class="content_cj_left">
+							<div class="cj_canvas_bg">
+								<div id="cj_canvas">
+									<a class="icon_plane"><img src="images/myPlane.png"/></a>
+									<input class="db_inp" type="text" id="input1" value="" />
+									<input class="db_inp" type="text" id="input2" value="" />
+									<input class="db_inp" type="text" id="input3" value="" />
+								</div>
+							</div>
+							<div class="cj_tab">
+								<a class="cj_tab_a" href="#">场景1</a>
+								<span class="cj_tab_line"></span>
+								<i class="cd_tab_jia"></i>
+							</div>
+						</div>
+						<div class="content_cj_right">
+							<div class="cjR_listone xueliangTxt">
+								<p><a>名称：</a><label><input type="text" value="文本框1"/></label></p>
+								<p><a>文字：</a><label><input type="text" value="" id="xueliang"/></label></p>
+								<p><a>X坐标：</a><label><input class="draw_x1" type="text" value="0" onkeyup="this.value=this.value.replace(/\D/g,'')"/></label></p>
+								<p><a>Y坐标：</a><label><input class="draw_y1" type="text" value="0" onkeyup="this.value=this.value.replace(/\D/g,'')"/></label></p>
+								<p><a>宽：</a><label><input class="draw_w1" type="text" value="0"/></label></p>
+								<p><a>高：</a><label><input class="draw_h1" type="text" value="0"/></label></p>
+								<p><a>锚点：</a><label><input type="text" value="中心位置"/></label></p>
+								<p><a>锚定于：</a><label><input type="text" value="场景"/></label></p>
+								<p><a>层级：</a><label><input type="text" value="1"/></label></p>
+								<p><a>是否显示：</a><label><select class="juanzhou_select"><option>是</option><option>否</option></select></label></p>
+								<p><a>旋转角度：</a><label><input type="text" value="0"/></label></p>
+								<p><a>横向缩放：</a><label><input type="text" value="100%"/></label></p>
+								<p><a>纵向缩放：</a><label><input type="text" value="100%"/></label></p>
+								<span class="cjRight_ok cjRight_ok_xl">确定</span>
+							</div>
+							<div class="cjR_listone defenTxt">
+								<p><a>名称：</a><label><input type="text" value="文本框2"/></label></p>
+								<p><a>文字：</a><label><input type="text" value="" id="defen"/></label></p>
+								<p><a>X坐标：</a><label><input class="draw_x2" type="text" value="0"/></label></p>
+								<p><a>Y坐标：</a><label><input class="draw_y2" type="text" value="0"/></label></p>
+								<p><a>宽：</a><label><input class="draw_w2" type="text" value="0"/></label></p>
+								<p><a>高：</a><label><input class="draw_h2" type="text" value="0"/></label></p>
+								<p><a>锚点：</a><label><input type="text" value="中心位置"/></label></p>
+								<p><a>锚定于：</a><label><input type="text" value="场景"/></label></p>
+								<p><a>层级：</a><label><input type="text" value="1"/></label></p>
+								<p><a>是否显示：</a><label><select class="juanzhou_select"><option>是</option><option>否</option></select></label></p>
+								<p><a>旋转角度：</a><label><input type="text" value="0"/></label></p>
+								<p><a>横向缩放：</a><label><input type="text" value="100%"/></label></p>
+								<p><a>纵向缩放：</a><label><input type="text" value="100%"/></label></p>
+								<span class="cjRight_ok cjRight_ok_df">确定</span>
+							</div>
+							<div class="cjR_listone zantingTxt">
+								<p><a>名称：</a><label><input type="text" value="文本框3"/></label></p>
+								<p><a>X坐标：</a><label><input class="draw_x3" type="text" value="0"/></label></p>
+								<p><a>Y坐标：</a><label><input class="draw_y3" type="text" value="0"/></label></p>
+								<p><a>宽：</a><label><input class="draw_w3" type="text" value="0"/></label></p>
+								<p><a>高：</a><label><input class="draw_h3" type="text" value="0"/></label></p>
+								<p><a>锚点：</a><label><input type="text" value="中心位置"/></label></p>
+								<p><a>锚定于：</a><label><input type="text" value="场景"/></label></p>
+								<p><a>层级：</a><label><input type="text" value="1"/></label></p>
+								<p><a>是否显示：</a><label><select class="juanzhou_select"><option>是</option><option>否</option></select></label></p>
+								<p><a>旋转角度：</a><label><input type="text" value="0"/></label></p>
+								<p><a>横向缩放：</a><label><input type="text" value="100%"/></label></p>
+								<p><a>纵向缩放：</a><label><input type="text" value="100%"/></label></p>
+								<span class="cjRight_ok cjRight_ok_zt">确定</span>
+							</div>
+							<div class="cjR_listone zantingBtn">
+								<p><a>名称：</a><label><input type="text" value="按钮1"/></label></p>
+								<p><a>文字：</a><label><input type="text" value=""/></label></p>
+								<p><a>X坐标：</a><label><input type="text" value="380"/></label></p>
+								<p><a>Y坐标：</a><label><input type="text" value="14"/></label></p>
+								<p><a>宽：</a><label><input type="text" value="80"/></label></p>
+								<p><a>宽：</a><label><input type="text" value="40"/></label></p>
+								<p><a>锚点：</a><label><input type="text" value="中心位置"/></label></p>
+								<p><a>锚定于：</a><label><input type="text" value="场景"/></label></p>
+								<p><a>层级：</a><label><input type="text" value="1"/></label></p>
+								<p><a>是否显示：</a><label><select class="juanzhou_select"><option>是</option><option>否</option></select></label></p>
+								<p><a>旋转角度：</a><label><input type="text" value="0"/></label></p>
+								<p><a>横向缩放：</a><label><input type="text" value="100%"/></label></p>
+								<p><a>纵向缩放：</a><label><input type="text" value="100%"/></label></p>
+								<span class="cjRight_ok cjRight_ok_ztB">确定</span>
+							</div>
+							<div class="cjR_listone juanzhouTxt">
+								<p><a>名称：</a><label><input type="text" value="卷轴"/></label></p>
+								<p><a>X坐标：</a><label><input class="draw_x5" type="text" value="0"/></label></p>
+								<p><a>Y坐标：</a><label><input class="draw_y5" type="text" value="0"/></label></p>
+								<p><a>宽：</a><label><input class="draw_w5" type="text" value="100"/></label></p>
+								<p><a>宽：</a><label><input class="draw_h5" type="text" value="45"/></label></p>
+								<p><a>滚动方向：</a>
+									<label>
+										<select class="juanzhou_select">
+											<option style="display:none" >选择方向</option>
+											<option>向上滚动</option>
+											<option>向下滚动</option>
+											<option>向左滚动</option>
+											<option>向右滚动</option>
+										</select>
+									</label></p>
+								<p><a>滚动速度：</a><label><input type="text" value="1"/></label></p>
+								<p><a>锚点：</a><label><input type="text" value="中心位置"/></label></p>
+								<p><a>锚定于：</a><label><input type="text" value="场景"/></label></p>
+								<p><a>层级：</a><label><input type="text" value="1"/></label></p>
+								<p><a>是否显示：</a><label><select class="juanzhou_select"><option>是</option><option>否</option></select></label></p>
+								<p><a>横向缩放：</a><label><input type="text" value="100%"/></label></p>
+								<p><a>纵向缩放：</a><label><input type="text" value="100%"/></label></p>
+								<span class="cjRight_ok cjRight_ok_jz">确定</span>
+							</div>
+						</div>
+					</div>
+					<!--动画-->
+					<div class="content_list">
+						<div class="bianliang_content">
+							<div class="bl_content">
+								<div class="donghua_cont">
+									<div class="donghua_cont_list donghua_cont_list1">
+										<p>
+											<a class="donghua_list_tit"><input type="text" value="动画1" /></a>
+											<a class="donghua_list_qita">不循环</a>
+											<a class="donghua_list_qita">间隔100毫秒</a>
+										</p>
+										<p class="donghua_picBox">
+											<a class="donghua_list_pic donghua_list_pic1"><input type="file" id="donghua_pic1" accept="image/*"/></a>
+											<a class="donghua_list_pic donghua_list_pic2"><input type="file" id="donghua_pic2" accept="image/*"/></a>
+											<a class="donghua_list_pic donghua_list_pic3"><input type="file" id="donghua_pic3" accept="image/*"/></a>
+											<a style="display: none;" class="donghua_list_pic donghua_list_pic4"><input type="file" id="donghua_pic4" accept="image/*"/></a>
+											<a style="display: none;" class="donghua_list_pic donghua_list_pic5"><input type="file" id="donghua_pic5" accept="image/*"/></a>
+											<a class="donghua_pic_xz donghua_pic_xz1"></a>
+										</p>
+									</div>
+									<div class="donghua_cont_list donghua_cont_list2">
+										<p>
+											<a class="donghua_list_tit"><input type="text" value="动画2" /></a>
+											<a class="donghua_list_qita">不循环</a>
+											<a class="donghua_list_qita">间隔100毫秒</a>
+										</p>
+										<p class="donghua_picBox">
+											<a class="donghua_list_pic donghua_list_pic6"><input type="file" id="donghua_pic6" accept="image/*"/></a>
+											<a class="donghua_list_pic donghua_list_pic7"><input type="file" id="donghua_pic7" accept="image/*"/></a>
+											<a class="donghua_list_pic donghua_list_pic8"><input type="file" id="donghua_pic8" accept="image/*"/></a>
+											<a style="display: none;" class="donghua_list_pic donghua_list_pic9"><input type="file" id="donghua_pic9" accept="image/*"/></a>
+											<a style="display: none;" class="donghua_list_pic donghua_list_pic10"><input type="file" id="donghua_pic10" accept="image/*"/></a>
+											<a class="donghua_pic_xz donghua_pic_xz2"></a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--模板-->
+					<div class="content_list">
+						<div class="content_mb">
+							<div class="mb">
+								<div class="mb_rukou">
+									<div class="rukou_class">
+										<div class="rukou_tit"></div>
+										<div class="rukou_cont mb_class_cont">
+											<div class="contClass_redkuang">
+												<div class="rukou_contBox">
+													<label class="cont_tit">名称：<input type="text" name="" id="" value="场景1" /></label>
+													<label id="RK_VAL">触发操作：无</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="mb_sprite">
+									<div class="sprite_class">
+										<div class="sprite_tit"></div>
+										<div class="sprite_cont mb_class_cont">
+											<div class="contClass_redkuang">
+												<div class="sprite_cont_l">
+													<label class="cont_tit">名称：<input class="cont_titF" type="text" name="" id="" value="精灵类1" /></label>
+													<label id="DF_VAL1">成员变量：无</label>
+													<label id="DF_VAL2">触发操作：无</label>
+												</div>
+												<div class="sprite_cont_r"></div>
+											</div>
+										</div>
+										<div class="mb_line"><a></a><span></span></div>
+										<div class="sprite_zi1 mb_class_cont">
+											<div class="zi1_tit"></div>
+											<div class="contClass_redkuang">
+												<div class="zi1_cont_l">
+													<label>名称：<input class="cont_titZI1" type="text" name="" id="" value="精灵派生模板1" /></label>
+													<label id="ZI_VAL1">成员变量：无</label>
+													<label id="ZI_VAL2">触发操作：无</label>
+												</div>
+												<div class="zi1_cont_r zi1_cont_r1"><img src=""/></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="mb_jifang">
+									<div class="jifang_class">
+										<div class="jifang_tit"></div>
+										<div class="jifang_cont mb_class_cont">
+											<div class="contClass_redkuang">
+												<div class="jifang_contBox">
+													<label class="cont_tit">名称：<input style="background-color: #f3f9fd;" type="text" name="" id="" value="精灵类2" /></label>
+													<label id="JF_VAL1">成员变量：无</label>
+													<label id="JF_VAL2">触发操作：无</label>
+												</div>
+												<div class="sprite_cont_r jf_cont_r1"><img src=""/></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="mb_paodan">
+									<div class="paodan_class">
+										<div class="paodan_tit"></div>
+										<div class="paodan_cont mb_class_cont">
+											<div class="contClass_redkuang">
+												<div class="paodan_contBox">
+													<label class="cont_tit">名称：<input style="background-color: #f3f9fd;" type="text" name="" id="" value="精灵类3" /></label>
+													<label id="PD_VAL1">成员变量：无</label>
+													<label id="PD_VAL2">触发操作：无</label>
+												</div>
+												<div class="sprite_cont_r pd_cont_r1"><img src="" style="width: 10%;margin-top: 30%;margin-left: 45%;"/></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="mb_liucheng">
+									<div class="liucheng_class">
+										<div class="liucheng_tit"></div>
+										<div class="liucheng_cont mb_class_cont">
+											<div class="contClass_redkuang">
+												<div class="liucheng_contBox">
+													<label class="cont_tit">名称：<input style="background-color: #FEF5F6;" type="text" name="" id="" value="流程类1" /></label>
+													<label>发生周期：帧间隔</label>
+													<label>发生次数：持续发生</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cj_tab mb_tab">
+								<a class="cj_tab_a" href="#">场景1</a>
+								<span class="cj_tab_line"></span>
+								<i class="cd_tab_jia"></i>
+							</div>
+						</div>
+					</div>
+					<!--变量-->
+					<div class="content_list">
+						<div class="bianliang_content">
+							<div class="bl_content">
+								<div class="bianji_list">
+									<div class="bianji_title">全局变量</div>
+									<div class="bj_kuang">
+										<div class="bjBL_title">
+											<h4>名称</h4>
+											<h4>类型</h4>
+											<h4>初始值</h4>
+										</div>
+										<div class="bjBL_list BLBL_defen">
+											<a><input type="text" value="变量1" /></a>
+											<a class="blList_str">数字</a>
+											<a><input type="text" value="0" /></a>
+										</div>
+										<div class="blList_jia BLBL_jia"></div>
+									</div>
+								</div>															
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--编辑页-->
+			<div class="bianji">
+				<div class="bianji_box">
+					<div class="bianji_rk">
+						<div class="bianji_menu">
+							<div class="iconBox back_mb" style="width: 80px;margin-left: 38px;"><span><img src="images/icon-24.png"/></span><a>返回模板页</a></div>
+							<div class="iconBox" style="margin-left: 152px;"><span><img src="images/icon-25.png"/></span><a>插入</a><i></i><ul><li class="cha_fccz_rk">触发/操作</li><li>新元素</li><li class="cha_xinhang">新行</li><li class="qiantao_RK">嵌套触发/操作</li><li style="color: #999;">完成后</li></ul></div>
+							<div class="iconBox"><span><img src="images/icon-3.png"/></span><a>删除</a></div>
+							<div class="iconBox"><span><img src="images/icon-4.png"/></span><a>复制</a></div>
+							<div class="iconBox"><span><img src="images/icon-05.png"/></span><a>粘贴</a></div>
+							<div class="iconBox" style="margin-left: 178px;"><span><img src="images/icon-012.png"/></span><a>组合</a><i></i></div>
+						</div>
+						<div class="bianji_cont_bg">
+							<div class="bianji_cont">
+								<div class="bianji_list">
+									<div class="bianji_title">操作</div>
+									<div class="bj_kuang">
+										<div class="kuangkuang" data_tm='2'>
+											<a class="kk_title">操作</a>
+											<!--<div class="xinhang xinhang_active" data_tm='2'>
+												<div class="haha"></div>
+												<div class="db666Box">
+													<a class="db666">双击选择</a>
+													<div class="menu_bg">
+														<a class="close_menuBox"></a>
+														<a class="menu_katong"></a>
+														<div class="menuBox"></div>
+													</div>
+												</div>
+											</div>-->
+										</div>
+									</div>
+								</div>
+								<div class="bianji_list" id="RK_fccz">
+									<div class="bianji_title">触发/操作</div>
+									<div class="bj_kuang">
+										<div class="line_fccz">
+											<div class="kuangkuang" data_tm='1'>
+												<a class="kk_title">触发</a>
+											</div>
+											<div class="kuangkuang" id="rk_CZK" data_tm='2' style="margin-top: 20px;padding-bottom: 60px;min-height: 100px;">
+												<a class="kk_title">操作</a>
+												<i class="kk_title_ok ok_cz"></i>
+											</div>
+											<i class="kk_title_ok"></i>
+										</div>	
+									</div>
+									<div class="rk_fccz">
+										<div class="line_fccz">
+											<div class="kuangkuang" data_tm='1'>
+												<a class="kk_title">触发</a>
+											</div>
+											<div class="kuangkuang" data_tm='2' style="margin-top: 20px;padding-bottom: 50px;min-height: 100px;">
+												<a class="kk_title">操作</a>
+												<i class="kk_title_ok ok_cz"></i>
+											</div>
+											<i class="kk_title_ok"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bianji_F">
+						<div class="bianji_menu">
+							<div class="iconBox back_mb" style="width: 80px;margin-left: 38px;"><span><img src="images/icon-24.png"/></span><a>返回模板页</a></div>
+							<div class="iconBox" style="margin-left: 152px;"><span><img src="images/icon-25.png"/></span><a>插入</a><i></i><ul><li>触发/操作</li><li>新元素</li><li class="cha_xinhang">新行</li><li>嵌套触发/操作</li><li style="color: #999;">完成后</li></ul></div>
+							<div class="iconBox"><span><img src="images/icon-3.png"/></span><a>删除</a></div>
+							<div class="iconBox"><span><img src="images/icon-4.png"/></span><a>复制</a></div>
+							<div class="iconBox"><span><img src="images/icon-05.png"/></span><a>粘贴</a></div>
+							<div class="iconBox" style="margin-left: 178px;"><span><img src="images/icon-012.png"/></span><a>组合</a><i></i></div>
+						</div>
+						<div class="bianji_cont_bg">
+							<div class="bianji_cont">
+								<div class="bianji_list">
+									<div class="bianji_title">成员变量</div>
+										<div class="bj_kuang">
+											<div class="bjBL_title">
+												<h4>名称</h4>
+												<h4>类型</h4>
+												<h4>初始值</h4>
+											</div>
+											<div class="bjBL_list bjBL_list1">
+												<a><input type="text" value="变量1" /></a>
+												<a class="blList_str">数字</a>
+												<a><input type="text" value="1" /></a>
+											</div>
+											<div class="bjBL_list bjBL_list2">
+												<a><input type="text" value="变量2" /></a>
+												<a class="blList_str">字串</a>
+												<a><input type="text" value="1" /></a>
+											</div>
+										<div class="blList_jia blList_jia1"></div>
+									</div>
+								</div>
+								<div class="bianji_list">
+									<div class="bianji_title">精灵设置</div>
+									<div class="bj_kuang">
+										<p class="bjJL_list" style="width: 230px;">
+											<a>以子对象加入到：</a>
+											<a class="blList_str">舞台</a>
+										</p>
+										<p class="bjJL_list" style="width: 330px;">
+											<a style="">X坐标：</a>
+											<a class="blList_str">0</a>
+											<a style="margin-left: 30px;">Y坐标：</a>
+											<a class="blList_str">0</a>
+										</p>
+										<p class="bjJL_list">
+											<a>层级</a>
+											<a class="blList_str">1</a>
+										</p>
+										<p class="bjJL_list">
+											<a>尺寸：</a>
+											<a class="blList_str">100%</a>
+										</p>
+										<div class="file_pic_f"><img src=""/></div>
+										<span class="file_input">选择图片<input type="file" id="file_Fpic" accept="image/*"/></span>
+									</div>	
+								</div>
+								
+								<div class="bianji_list">
+									<div class="bianji_title">触发/操作</div>
+									<div class="bj_kuang">
+										<div class="line_fccz">
+											<div class="kuangkuang" data_tm='1'>
+												<a class="kk_title">触发</a>
+											</div>
+											<div class="kuangkuang" data_tm='2' style="margin-top: 20px;padding-bottom: 50px;min-height: 100px;">
+												<a class="kk_title">操作</a>
+												<i class="kk_title_ok ok_cz"></i>
+											</div>
+											<i class="kk_title_ok ok_F"></i>
+										</div>
+										<div class="line_fccz2 line_fccz2_F">
+											<div class="kuangkuang" data_tm='2' style="margin-top: 20px;padding-bottom: 50px;min-height: 100px;">
+												<a class="kk_title">操作</a>
+												<i class="kk_title_ok ok_cz"></i>
+											</div>
+											<i class="kk_title_ok2"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bianji_ZI1">
+						<div class="bianji_menu">
+							<div class="iconBox back_mb" style="width: 80px;margin-left: 38px;"><span><img src="images/icon-24.png"/></span><a>返回模板页</a></div>
+							<div class="iconBox" style="margin-left: 152px;"><span><img src="images/icon-25.png"/></span><a>插入</a><i></i><ul><li class="cha_fccz_ZI1">触发/操作</li><li>新元素</li><li class="cha_xinhang">新行</li><li class="qiantao_ZI1">嵌套触发/操作</li><li class="success_after">完成后</li></ul></div>
+							<div class="iconBox"><span><img src="images/icon-3.png"/></span><a>删除</a></div>
+							<div class="iconBox"><span><img src="images/icon-4.png"/></span><a>复制</a></div>
+							<div class="iconBox"><span><img src="images/icon-05.png"/></span><a>粘贴</a></div>
+							<div class="iconBox" style="margin-left: 178px;"><span><img src="images/icon-012.png"/></span><a>组合</a><i></i></div>
+						</div>
+						<div class="bianji_cont_bg">
+							<div class="bianji_cont">
+								<div class="bianji_list">
+									<div class="bianji_title">成员变量</div>
+										<div class="bj_kuang">
+											<div class="bjBL_title">
+												<h4>名称</h4>
+												<h4>类型</h4>
+												<h4>初始值</h4>
+											</div>
+											<div class="bjBL_list">
+												<a><input type="text" value="血量" /></a>
+												<a class="blList_str">数字</a>
+												<a><input type="text" value="1" /></a>
+											</div>
+											<div class="bjBL_list">
+												<a><input type="text" value="速度" /></a>
+												<a class="blList_str">字串</a>
+												<a><input type="text" value="1" /></a>
+											</div>
+										<div class="blList_jia"></div>
+									</div>
+								</div>
+								<div class="bianji_list">
+									<div class="bianji_title">精灵设置</div>
+									<div class="bj_kuang">
+										<p class="bjJL_list" style="width: 230px;">
+											<a>以子对象加入到：</a>
+											<a class="blList_str">舞台</a>
+										</p>
+										<p class="bjJL_list" style="width: 510px;">
+											<a>锚定于：</a>
+											<a class="blList_str">场景</a>
+											<a style="margin-left: 30px;">X坐标：</a>
+											<a class="blList_str">100</a>
+											<a style="margin-left: 30px;">Y坐标：</a>
+											<a class="blList_str">100</a>
+										</p>
+										<p class="bjJL_list">
+											<a>层级</a>
+											<a class="blList_str">1</a>
+										</p>
+										<p class="bjJL_list">
+											<a>尺寸：</a>
+											<a class="blList_str">100%</a>
+										</p>
+										<div class="file_pic_dj1"><img src=""/></div>
+										<span class="file_input">选择图片<input type="file" id="file_DJ1pic" accept="image/*"/></span>
+									</div>	
+								</div>
+								<div class="bianji_list">
+									<div class="bianji_title">触发/操作</div>
+									<div class="bj_kuang">
+										<div class="line_fccz">
+											<div class="kuangkuang" data_tm='1'>
+												<a class="kk_title">触发</a>
+												<div class="xinhang" data_tm="1">
+													<div class="haha">
+														<a class="thisT_a">敌方飞机1</a>
+														<a class="thisT_b">y轴位置</a>
+														<a class="thisT_b">大于</a>
+														<a class="thisT_c">1000</a>
+													</div>
+												</div>
+											</div>
+											<div class="kuangkuang" data_tm='2' style="margin-top: 20px;min-height: 100px;">
+												<a class="kk_title">操作</a>
+												<div class="xinhang" data_tm="2">
+													<div class="haha">
+														<a class="thisT_a">敌方飞机1</a>
+														<a class="thisT_b">销毁自己</a>
+													</div>
+												</div>
+												<i class="kk_title_ok ok_cz"></i>
+											</div>
+											<i class="kk_title_ok kk_title_ok_active"></i>
+										</div>
+										<div class="line_fccz2" style="display: block;">
+											<div class="kuangkuang" data_tm='2' style="margin-top: 20px;min-height: 100px;">
+												<a class="kk_title">操作</a>
+												<div class="xinhang" data_tm="2">
+													<div class="haha">
+														<a class="thisT_a">敌方飞机1</a>
+														<a class="thisT_b">设定y轴位置</a>
+														<a class="thisT_a">敌方飞机</a>
+														<a class="thisT_b">y轴位置</a>
+														<a class="thisT_b">加</a>
+														<a class="thisT_a">敌方飞机1速度</a>
+													</div>
+												</div>
+												<i class="kk_title_ok ok_cz"></i>
+											</div>
+											<i class="kk_title_ok2"></i>
+										</div>
+										<div class="line_fccz" id="zi1_FCCZ" style="margin-top: 75px;">
+											<div class="kuangkuang" data_tm='1'>
+												<a class="kk_title">触发</a>
+											</div>
+											<div class="kuangkuang" id="zi1_CZK" data_tm='2' style="margin-top: 20px;padding-bottom: 50px;min-height: 100px;">
+												<a class="kk_title">操作</a>
+												<i class="kk_title_ok ok_cz"></i>
+											</div>
+											<i class="kk_title_ok"></i>
+										</div>
+										<div class="line_fccz" id="zi1_FCCZ2" style="margin-top: 75px;">
+											<div class="kuangkuang" data_tm='1'>
+												<a class="kk_title">触发</a>
+											</div>
+											<div class="kuangkuang" data_tm='2' style="margin-top: 20px;padding-bottom: 50px;min-height: 100px;">
+												<a class="kk_title">操作</a>
+												<i class="kk_title_ok ok_cz"></i>
+											</div>
+											<i class="kk_title_ok"></i>
+										</div>
+									</div>
+									<div class="zi1_fccz">
+										<div class="line_fccz" style="margin-top: 75px;">
+											<div class="kuangkuang" data_tm='1'>
+												<a class="kk_title">触发</a>
+											</div>
+											<div class="kuangkuang" data_tm='2' style="margin-top: 20px;padding-bottom: 50px;min-height: 100px;">
+												<a class="kk_title">操作</a>
+												<i class="kk_title_ok ok_cz"></i>
+											</div>
+											<i class="kk_title_ok"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bianji_LC">
+						<div class="bianji_menu">
+							<div class="iconBox back_mb" style="width: 80px;margin-left: 38px;"><span><img src="images/icon-24.png"/></span><a>返回模板页</a></div>
+							<div class="iconBox" style="margin-left: 152px;"><span><img src="images/icon-25.png"/></span><a>插入</a><i></i><ul><li>触发/操作</li><li>新元素</li><li class="cha_xinhang">新行</li><li>嵌套触发/操作</li><li style="color: #999;">完成后</li></ul></div>
+							<div class="iconBox"><span><img src="images/icon-3.png"/></span><a>删除</a></div>
+							<div class="iconBox"><span><img src="images/icon-4.png"/></span><a>复制</a></div>
+							<div class="iconBox"><span><img src="images/icon-05.png"/></span><a>粘贴</a></div>
+							<div class="iconBox" style="margin-left: 178px;"><span><img src="images/icon-012.png"/></span><a>组合</a><i></i></div>
+						</div>
+						<div class="bianji_cont_bg">
+							<div class="bianji_cont">
+								<div class="bianji_list">
+									<div class="bianji_title">属性设置</div>
+									<div class="bj_kuang bj_kuang_active">
+										<p class="bjJL_list">
+											<a>发生周期：</a>
+											<a class="blList_str">帧间隔</a>
+										</p>
+										<p class="bjJL_list">
+											<a>发生次数：</a>
+											<a class="blList_str">持续发生</a>
+										</p>
+									</div>
+								</div>
+								<div class="bianji_list">
+									<div class="bianji_title">触发/操作</div>
+									<div class="bj_kuang">
+										<div class="line_fccz">
+											<div class="kuangkuang" data_tm='1'>
+												<a class="kk_title">触发</a>
+											</div>
+											<div class="kuangkuang" data_tm='2' style="margin-top: 20px;padding-bottom: 50px;min-height: 100px;">
+												<a class="kk_title">操作</a>
+												<i class="kk_title_ok ok_cz"></i>
+											</div>
+											<i class="kk_title_ok"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bianji_JF">
+						<div class="bianji_menu">
+							<div class="iconBox back_mb" style="width: 80px;margin-left: 38px;"><span><img src="images/icon-24.png"/></span><a>返回模板页</a></div>
+							<div class="iconBox" style="margin-left: 152px;"><span><img src="images/icon-25.png"/></span><a>插入</a><i></i><ul><li class="cha_JF_FCCZ">触发/操作</li><li>新元素</li><li class="cha_xinhang">新行</li><li class="qiantao_JF">嵌套触发/操作</li><li class="success_after">完成后</li></ul></div>
+							<div class="iconBox"><span><img src="images/icon-3.png"/></span><a>删除</a></div>
+							<div class="iconBox"><span><img src="images/icon-4.png"/></span><a>复制</a></div>
+							<div class="iconBox"><span><img src="images/icon-05.png"/></span><a>粘贴</a></div>
+							<div class="iconBox" style="margin-left: 178px;"><span><img src="images/icon-012.png"/></span><a>组合</a><i></i></div>
+						</div>
+						<div class="bianji_cont_bg">
+							<div class="bianji_cont">
+								<div class="bianji_list">
+									<div class="bianji_title">成员变量</div>
+										<div class="bj_kuang">
+											<div class="bjBL_title">
+												<h4>名称</h4>
+												<h4>类型</h4>
+												<h4>初始值</h4>
+											</div>
+											<div class="bjBL_list bjBL_list3">
+												<a><input type="text" value="变量1" /></a>
+												<a class="blList_str">数字</a>
+												<a><input type="text" value="1" /></a>
+											</div>
+										<div class="blList_jia blList_jia2"></div>
+									</div>
+								</div>
+								<div class="bianji_list">
+									<div class="bianji_title">精灵设置</div>
+									<div class="bj_kuang">
+										<p class="bjJL_list" style="width: 230px;">
+											<a>以子对象加入到：</a>
+											<a class="blList_str">舞台</a>
+										</p>
+										<p class="bjJL_list" style="width: 330px;">
+											<a style="">X坐标：</a>
+											<a class="blList_str">0</a>
+											<a style="margin-left: 30px;">Y坐标：</a>
+											<a class="blList_str">0</a>
+										</p>
+										<p class="bjJL_list">
+											<a>层级</a>
+											<a class="blList_str">1</a>
+										</p>
+										<p class="bjJL_list">
+											<a>尺寸：</a>
+											<a class="blList_str">100%</a>
+										</p>
+										<div class="file_pic_jf"><img src=""/></div>
+										<span class="file_input">选择图片<input type="file" id="file_JFpic" accept="image/*"/></span>
+									</div>	
+								</div>
+								<div class="bianji_list">
+									<div class="bianji_title">触发/操作</div>
+									<div class="bj_kuang">
+										<div class="line_fccz">
+											<div class="kuangkuang" data_tm='1'>
+												<a class="kk_title">触发</a>
+											</div>
+											<div class="kuangkuang" id="jf_CZK" data_tm='2' style="margin-top: 20px;padding-bottom: 50px;min-height: 100px;">
+												<a class="kk_title">操作</a>
+												<i class="kk_title_ok ok_cz" id="OK_JFJF"></i>
+											</div>
+											<i class="kk_title_ok"></i>
+										</div>
+										<div class="line_fccz" id="JF_FCCZ" style="margin-top: 75px;">
+											<div class="kuangkuang" data_tm='1'>
+												<a class="kk_title">触发</a>
+											</div>
+											<div class="kuangkuang" data_tm='2' style="margin-top: 20px;padding-bottom: 50px;min-height: 100px;">
+												<a class="kk_title">操作</a>
+												<i class="kk_title_ok ok_cz"></i>
+											</div>
+											<i class="kk_title_ok"></i>
+										</div>
+									</div>
+									<div class="jf_fccz">
+										<div class="line_fccz">
+											<div class="kuangkuang" data_tm='1'>
+												<a class="kk_title">触发</a>
+											</div>
+											<div class="kuangkuang" data_tm='2' style="margin-top: 20px;padding-bottom: 50px;min-height: 100px;">
+												<a class="kk_title">操作</a>
+												<i class="kk_title_ok ok_cz"></i>
+											</div>
+											<i class="kk_title_ok"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bianji_pd">
+						<div class="bianji_menu">
+							<div class="iconBox back_mb" style="width: 80px;margin-left: 38px;"><span><img src="images/icon-24.png"/></span><a>返回模板页</a></div>
+							<div class="iconBox" style="margin-left: 152px;"><span><img src="images/icon-25.png"/></span><a>插入</a><i></i><ul><li class="cha_paodao">触发/操作</li><li>新元素</li><li class="cha_xinhang">新行</li><li>嵌套触发/操作</li><li style="color: #999;">完成后</li></ul></div>
+							<div class="iconBox"><span><img src="images/icon-3.png"/></span><a>删除</a></div>
+							<div class="iconBox"><span><img src="images/icon-4.png"/></span><a>复制</a></div>
+							<div class="iconBox"><span><img src="images/icon-05.png"/></span><a>粘贴</a></div>
+							<div class="iconBox" style="margin-left: 178px;"><span><img src="images/icon-012.png"/></span><a>组合</a><i></i></div>
+						</div>
+						<div class="bianji_cont_bg">
+							<div class="bianji_cont">
+								<div class="bianji_list">
+									<div class="bianji_title">成员变量</div>
+										<div class="bj_kuang">
+											<div class="bjBL_title">
+												<h4>名称</h4>
+												<h4>类型</h4>
+												<h4>初始值</h4>
+											</div>
+											<div class="bjBL_list bjBL_list4">
+												<a><input type="text" value="变量1" /></a>
+												<a class="blList_str">数字</a>
+												<a><input type="text" value="1" /></a>
+											</div>
+										<div class="blList_jia blList_jia3"></div>
+									</div>
+								</div>
+								<div class="bianji_list">
+									<div class="bianji_title">精灵设置</div>
+									<div class="bj_kuang">
+										<p class="bjJL_list" style="width: 230px;">
+											<a>以子对象加入到：</a>
+											<a class="blList_str">舞台</a>
+										</p>
+										<p class="bjJL_list" style="width: 330px;">
+											<a style="">X坐标：</a>
+											<a class="blList_str">0</a>
+											<a style="margin-left: 30px;">Y坐标：</a>
+											<a class="blList_str">0</a>
+										</p>
+										<p class="bjJL_list">
+											<a>层级</a>
+											<a class="blList_str">1</a>
+										</p>
+										<p class="bjJL_list">
+											<a>尺寸：</a>
+											<a class="blList_str">100%</a>
+										</p>
+										<div class="file_pic_pd"><img src="" style="width: 6%;margin-top: 30%;margin-left: 48%;"/></div>
+										<span class="file_input">选择图片<input type="file" id="file_PDpic" accept="image/*"/></span>
+									</div>	
+								</div>
+								<div class="bianji_list">
+									<div class="bianji_title">触发/操作</div>
+									<div class="bj_kuang">
+										<div class="line_fccz">
+											<div class="kuangkuang" data_tm='1'>
+												<a class="kk_title">触发</a>
+											</div>
+											<div class="kuangkuang" data_tm='2' style="margin-top: 20px;padding-bottom: 50px;min-height: 100px;">
+												<a class="kk_title">操作</a>
+												<i class="kk_title_ok ok_cz"></i>
+											</div>
+											<i class="kk_title_ok ok_PD"></i>
+										</div>
+										<div class="line_fccz2 line_fccz2_PD">
+											<div class="kuangkuang" data_tm='2' style="margin-top: 20px;padding-bottom: 50px;min-height: 100px;">
+												<a class="kk_title">操作</a>
+												<i class="kk_title_ok ok_cz"></i>
+											</div>
+											<i class="kk_title_ok2"></i>
+										</div>
+										<div class="line_fccz line_fccz_pd" style="margin-top: 75px;">
+											<div class="kuangkuang" data_tm='1'>
+												<a class="kk_title">触发</a>
+											</div>
+											<div class="kuangkuang" data_tm='2' style="margin-top: 20px;padding-bottom: 50px;min-height: 100px;">
+												<a class="kk_title">操作</a>
+												<i class="kk_title_ok ok_cz"></i>
+											</div>
+											<i class="kk_title_ok"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ifram_box">
+				<iframe class="asdasd" style="display: none;position: absolute;left: 601px;top: 186px;border: 1px solid #ccc;" src="" width="480" height="622"></iframe>
+				<span class="close_ifram"><img src="images/close2.png"/></span>
+			</div>			
+		</section>
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
